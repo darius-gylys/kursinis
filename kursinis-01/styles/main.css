@@ -1,14 +1,30 @@
 .wrapper {
-
+    font-family: 'Roboto', sans-serif, Arial, Helvetica;
 }
 
 .navigation-wrap {
-    background-color: rgb(102, 102, 255);
+    background-color: #1699e5;
 }
 
 .block-intro {
     min-height: 100px;
-    background-color: rgb(102, 102, 255);
+    background-color: #1699e5;
+}
+
+.container-intro {
+
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+
+.icon-big {
+    /* font-family, font-size  */
 }
 
 .block-offers {
@@ -16,7 +32,15 @@
     background: #999;
 }
 
-.footer {
+.container-offers {
 
 }
 
+.footer {
+    min-height: 50px;
+    background: #999;
+}
+
+.container-footer {
+    
+}
