@@ -17,14 +17,22 @@
 }
 
 .container-intro {
+    position: relative;
+    top: 4.5em;
+    right: -2em;
+}
 
+.welcome {
+    padding: 0;
+    font-size: 1.3em;
+    color: white;
 }
 
 h1 {
     padding: 0;
-    margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
+    font-size: 3em;
     color: white;
 }
 
@@ -54,20 +62,30 @@ h1 {
 @media only screen and (max-width: 767px) {
     .block-intro {
     height: calc(100vh - 60px - 13vh);
-    background-size: 140%;
-    background-position: -40% 35%;
+    background-size: 135%;
+    background-position: -20% 34%;
     }
 
-
+    .container-intro {
+        position: relative;
+        top: 4em;
+        left: -.5em;
+    }
 } 
 
-/* Medium devices (tablets, from 768px up to 1023px) */
+/* Medium devices (tablets, from 768px up to 992px) */
 @media only screen 
 and (min-width: 768px)
-and (max-width: 1023px) {
+and (max-width: 991px) {
     .block-intro {
     background-size: 85%;
     background-position: 290% 40%;
+    }
+
+    .container-intro {
+        position: relative;
+        top: 5.5em;
+        right: -5em;
     }
 }
 
