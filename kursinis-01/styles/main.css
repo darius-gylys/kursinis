@@ -39,7 +39,7 @@ h1 {
 .icon-block {
     display: flex;
     width: 85vw;
-    max-width: 500px;
+    max-width: 480px;
     margin-top: 4.5em;
     justify-content: space-between;
     align-items: center;
@@ -61,7 +61,7 @@ h1 {
 .icon-description-block {
     display: flex;
     width: 85vw;
-    max-width: 500px;
+    max-width: 480px;
     margin-top: .75em;
     justify-content: space-between;
     align-items: center;
