@@ -3,12 +3,17 @@
 }
 
 .navigation-wrap {
-    background-color: #1699e5;
+    
 }
 
 .block-intro {
-    min-height: 100px;
+    background-image: url("../../picture-assets/overview_devices_rotated_2x.png");
+    height: calc(100vh - 60px);
+    background-size: 768px 672px;
+    background-position: 100% 70%;
+    background-repeat: no-repeat;
     background-color: #1699e5;
+    box-shadow: inset -50px 0 100px #1699e5;
 }
 
 .container-intro {
@@ -29,7 +34,7 @@ h1 {
 
 .block-offers {
     min-height: 100px;
-    background: #999;
+    background: rgb(207, 216, 220);
 }
 
 .container-offers {
@@ -38,9 +43,31 @@ h1 {
 
 .footer {
     min-height: 50px;
-    background: #999;
+    background: rgb(207, 216, 220);
 }
 
 .container-footer {
     
 }
+
+/* Small devices (portrait phones, less than 768px) */
+@media only screen and (max-width: 767px) {
+    .block-intro {
+    height: calc(100vh - 60px - 13vh);
+    background-size: 140%;
+    background-position: -40% 35%;
+    }
+
+
+} 
+
+/* Medium devices (tablets, from 768px up to 1023px) */
+@media only screen 
+and (min-width: 768px)
+and (max-width: 1023px) {
+    .block-intro {
+    background-size: 85%;
+    background-position: 290% 40%;
+    }
+}
+
