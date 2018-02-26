@@ -164,7 +164,21 @@ and (max-width: 991px) {
     .container-intro {
         position: relative;
         top: 5.5em;
-        margin-left: 0;
+        left: 8.5em;
+    }
+
+    .discover {
+        position: relative;
+        top: -5.5em;
+        left: 8.5em;
+    }
+
+    .block-offers {
+        top: -5.5em;
+    }
+
+    .block-intro {
+        height: 100vh;
     }
 }
 
