@@ -1,5 +1,17 @@
-.wrapper {
+html {
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    overflow-x:hidden;
+    margin: 0;
     font-family: 'Roboto', sans-serif, Arial, Helvetica;
+    background-color: rgb(207, 216, 220);
+}
+
+.wrapper {
+    margin: 0;
 }
 
 .navigation-wrap {
@@ -8,7 +20,7 @@
 
 .block-intro {
     background-image: url("../../picture-assets/overview_devices_rotated_2x.png");
-    height: calc(100vh - 60px);
+    height: calc(100vh - 56px);
     background-size: 768px 672px;
     background-position: 100% 70%;
     background-repeat: no-repeat;
@@ -18,8 +30,9 @@
 
 .container-intro {
     position: relative;
-    top: 4.5em;
-    right: -2em;
+    top: 5em;
+    right: -5em;
+
 }
 
 .welcome {
@@ -31,8 +44,8 @@
 h1 {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    font-size: 3.25em;
     font-weight: bolder;
-    font-size: 3em;
     color: white;
 }
 
@@ -54,7 +67,7 @@ h1 {
     background-color: #1699e5;
     border-radius: 50%;
     border: solid 3px white;
-    font-size: 3em;
+    font-size: 3.5em;
     color: white;
 }
 
@@ -74,18 +87,42 @@ h1 {
     color: white;
 }
 
-.block-offers {
-    min-height: 100px;
-    background: rgb(207, 216, 220);
+.discover {
+    position: relative;
+    top: -4.5em;
+    left: 4.5em;
+    height: 2em;
+    font-weight: bold;
+    color: white;
 }
 
-.container-offers {
+.block-offers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -5em;
+    min-height: 100px;
+    margin-bottom: 4em;
+}
 
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.card {
+    min-width: 300px;
+    min-height: 150px;
+    margin: 1em .5em .5em .5em;
+    background-color: white;
 }
 
 .footer {
     min-height: 50px;
-    background: rgb(207, 216, 220);
 }
 
 .container-footer {
@@ -101,9 +138,17 @@ h1 {
     }
 
     .container-intro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: relative;
         top: 4em;
-        left: -.5em;
+        left: 1.25em;
+    }
+
+    .block-offers {
+        top: 4em;
+        margin-left: 0;
     }
 } 
 
@@ -119,7 +164,7 @@ and (max-width: 991px) {
     .container-intro {
         position: relative;
         top: 5.5em;
-        right: -5em;
+        margin-left: 0;
     }
 }
 
