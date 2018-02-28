@@ -277,7 +277,7 @@ h1 {
 }
 
 /* Medium devices (tablets, from 768px up to 992px) */
-/* @media only screen 
+@media only screen 
 and (min-width: 768px)
 and (max-width: 991px) {
     .block-intro {
@@ -304,5 +304,5 @@ and (max-width: 991px) {
     .block-intro {
         height: 100vh;
     }
-} */
+}
 
