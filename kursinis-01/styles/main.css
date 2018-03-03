@@ -230,7 +230,6 @@ footer {
     }
 
     .container-intro {
-        position: relative;
         max-width: calc(100% - 1.25em);
         top: 4em;
         left: 1.25em;
@@ -291,7 +290,6 @@ footer {
     }
 
     .container-intro {
-        position: relative;
         max-width: calc(100% - 1.25em);
         top: 4em;
         left: 1.25em;
@@ -334,7 +332,6 @@ footer {
     }
 
     .container-intro {
-        position: relative;
         max-width: calc(100% - 1.25em);
         top: 4em;
         left: 1.25em;
@@ -377,14 +374,12 @@ and (max-width: 991px) {
     }
 
     .container-intro {
-        position: relative;
-        max-width: calc(100% - 8.5em); 
+        max-width: calc(100% - 8.5em);
         top: 5.5em;
         left: 8.5em;
     }
 
     .discover {
-        position: relative;
         top: -5.5em;
         left: 8.5em;
     }
@@ -404,17 +399,14 @@ and (max-width: 991px) {
 
 /* Extra learge devices (over 1200px) */
 @media only screen 
-and (min-width: 1200px) {
-    
+and (min-width: 1200px) {    
     .container-intro {
-        position: relative;
         max-width: calc(100% - 8.5em);
         top: 5.5em;
         left: 8.5em;
     }
 
     .discover {
-        position: relative;
         top: -5.5em;
         left: 8.5em;
     }
