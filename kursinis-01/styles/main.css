@@ -1,10 +1,5 @@
-html {
-    margin: 0;
-}
-
 body {
     overflow-x:hidden;
-    margin: 0;
     font-family: 'Roboto', sans-serif, Arial, Helvetica;
     background-color: rgb(207, 216, 220);
 }
@@ -21,6 +16,7 @@ body {
 
 .container-intro {
     position: relative;
+    max-width: calc(100% - 5em);
     top: 5em;
     right: -5em;
 }
@@ -70,6 +66,7 @@ h1 {
     width: 85vw;
     max-width: 480px;
     margin-top: .75em;
+    margin-left: .5em;
     justify-content: space-between;
     align-items: center;
 }
@@ -211,8 +208,71 @@ h1 {
     font-size: 1.25em;
 }
 
-/* Small devices (portrait phones, less than 768px) */
-@media only screen and (max-width: 767px) {
+/* MEDIA QUERIES below. Default device is between 992-1199px (large) */
+
+/* Extra-small devices (below 449px) */
+@media only screen and (max-width: 449px) {
+    .block-intro {
+    height: calc(100vh - 60px - 28vh);
+    background-size: 135%;
+    background-position: -20% 34%;
+    }
+
+    .container-intro {
+        position: relative;
+        max-width: calc(100% - 1.25em);
+        top: 4em;
+        left: 1.25em;
+    }
+
+    .block-offers {
+        top: 1em;
+    }
+
+    .cards-wrapper {
+        width: 95%;
+    }
+
+    .card__txt-wrapper {   
+        width: 100%;
+        height: 150px;
+    }
+
+    .card {
+        height: 300px;
+        margin-top: .75em;
+    }
+
+    .ico-descript-txt {
+    display: none;
+    }
+
+    .icon-big {
+        width: 90px;
+        height: 90px;
+        background-color: #1699e5;
+        border-radius: 50%;
+        border: solid 3px white;
+        font-size: 3.5em;
+        color: white;
+    }
+
+    .icon-block {
+        max-width: 300px;
+    }
+
+    .discover {
+        top: 2em;
+        left: 1.5em;
+        font-size: 1em;
+        font-weight: 600;
+        color: rgb(105, 105, 105);
+    }
+}
+
+/* Small devices (450-629px) */
+@media only screen and (min-width: 450px)
+    and (max-width: 629px) {
     .block-intro {
     height: calc(100vh - 60px - 13vh);
     background-size: 135%;
@@ -221,6 +281,7 @@ h1 {
 
     .container-intro {
         position: relative;
+        max-width: calc(100% - 1.25em);
         top: 4em;
         left: 1.25em;
     }
@@ -252,7 +313,50 @@ h1 {
     }
 }
 
-/* Medium devices (tablets, from 768px up to 992px) */
+/* Devices between 630-767px */
+@media only screen and (min-width: 630px) 
+    and (max-width: 767px) {
+    .block-intro {
+    height: calc(100vh - 60px - 13vh);
+    background-size: 135%;
+    background-position: -20% 34%;
+    }
+
+    .container-intro {
+        position: relative;
+        max-width: calc(100% - 1.25em);
+        top: 4em;
+        left: 1.25em;
+    }
+
+    .block-offers {
+        top: 1em;
+    }
+
+    .cards-wrapper {
+        width: 95%;
+    }
+
+    .card__txt-wrapper {   
+        width: 100%;
+        height: 150px;
+    }
+
+    .card {
+        height: 430px;
+        margin-top: .75em;
+    }
+
+    .discover {
+        top: 2em;
+        left: 1.5em;
+        font-size: 1em;
+        font-weight: 600;
+        color: rgb(105, 105, 105);
+    }
+}
+
+/* Medium devices (tablets, 768px-991px) */
 @media only screen 
 and (min-width: 768px)
 and (max-width: 991px) {
@@ -263,6 +367,7 @@ and (max-width: 991px) {
 
     .container-intro {
         position: relative;
+        max-width: calc(100% - 8.5em); 
         top: 5.5em;
         left: 8.5em;
     }
@@ -292,6 +397,7 @@ and (min-width: 1200px) {
     
     .container-intro {
         position: relative;
+        max-width: calc(100% - 8.5em);
         top: 5.5em;
         left: 8.5em;
     }
