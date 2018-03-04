@@ -4,7 +4,7 @@ body {
     background-color: rgb(207, 216, 220);
 }
 
-/* .block-intro section */
+/* block-intro */
 
 .block-intro {
     background-image: url("../../picture-assets/overview_devices_rotated_2x.png");
@@ -78,9 +78,9 @@ h1 {
     font-size: .85em;
     font-weight: 600;
     color: white;
-}  /* ---------------------------------- END OF .block-intro section */
+}  /* ---------------------------------- END OF block-intro */
 
-/* .block-offers section */
+/* block-offers */
 
 .discover {
     position: relative;
@@ -194,13 +194,9 @@ h1 {
     background-image: url("../../picture-assets/functions.png");
     background-size: 100%;
     background-repeat: no-repeat;
-}   /* ---------------------------------- END OF .block-offers section */
+}   /* ---------------------------------- END OF block-offers */
 
 /* footer */
-
-footer {
-    max-width: 100vw;  /* Here is some DEFAULT BUG! (oversized by default) */
-}
 
 .foot-text {
     text-align: center;
@@ -220,6 +216,17 @@ footer {
 } /* ---------------------------------- END OF footer */
 
 /* MEDIA QUERIES below. Default device is between 992-1199px (large) */
+
+/* Extra-small devices (below 359px) */
+@media only screen and (max-width: 359px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .icon-block {
+        margin-top: 2.5em;
+    }
+}
 
 /* Extra-small devices (below 449px) */
 @media only screen and (max-width: 449px) {
