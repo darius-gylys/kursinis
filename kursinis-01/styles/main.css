@@ -219,7 +219,7 @@ footer {
     font-size: 1.25em;
 } /* ---------------------------------- END OF footer */
 
-/* MEDIA QUERIES below. Default device is between 992-1199px (large) */
+/* MEDIA QUERIES below. Default device is between 992-1199px (LANDSCAPE, because PORTRAIT is set as query below) */
 
 /* Extra-small devices (below 359px) */
 @media only screen and (max-width: 359px) {
@@ -292,8 +292,9 @@ footer {
 }
 
 /* Small devices (450-629px) */
-@media only screen and (min-width: 450px)
-    and (max-width: 629px) {
+@media only screen 
+and (min-width: 450px)
+and (max-width: 629px) {
     .block-intro {
     height: calc(100vh - 60px - 13vh);
     background-size: 135%;
@@ -334,8 +335,9 @@ footer {
 }
 
 /* Devices between 630-767px */
-@media only screen and (min-width: 630px) 
-    and (max-width: 767px) {
+@media only screen 
+and (min-width: 630px) 
+and (max-width: 767px) {
     .block-intro {
     height: calc(100vh - 60px - 13vh);
     background-size: 135%;
@@ -375,10 +377,11 @@ footer {
     }
 }
 
-/* Medium devices (tablets, 768px-991px) */
+/* Medium devices (LANDSCAPE, 768px-991px) */
 @media only screen 
 and (min-width: 768px)
-and (max-width: 991px) {
+and (max-width: 991px)
+and (orientation: landscape) {
     .block-intro {
     background-size: 85%;
     background-position: 290% 40%;
@@ -408,7 +411,27 @@ and (max-width: 991px) {
     }
 }
 
-/* Extra learge devices (over 1200px) */
+/* Medium devices (PORTRAIT, 768px-991px) */
+@media only screen 
+and (min-width: 768px)
+and (max-width: 991px)
+and (orientation: portrait) {
+    .block-intro {
+        height: 70vh;
+    }
+}
+
+/* Large devices (PORTRAIT, 991-1199px) */
+@media only screen 
+and (min-width: 991px)
+and (max-width: 1199px)
+and (orientation: portrait) {
+    .block-intro {
+        height: 55vh;
+    }
+}
+
+/* Extra large devices (over 1200px) */
 @media only screen 
 and (min-width: 1200px) {    
     .container-intro {
