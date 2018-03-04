@@ -86,7 +86,7 @@ h1 {
     position: relative;
     top: -4.5em;
     left: 4.5em;
-    width: calc(100% - 4.5em);
+    width: calc(100% - 10em);
     height: 2em;
     font-weight: bold;
     color: white;
@@ -197,6 +197,10 @@ h1 {
 }   /* ---------------------------------- END OF block-offers */
 
 /* footer */
+
+footer {
+    max-width: 100vw;
+}
 
 .foot-text {
     text-align: center;
