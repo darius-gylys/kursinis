@@ -6,7 +6,7 @@ body {
 /* block-intro */
 
 .block-intro {
-    background-image: url("../../picture-assets/overview_devices_rotated_2x.png");
+    background-image: url("../picture-assets/overview_devices_rotated_2x.png");
     height: calc(100vh - 56px);
     background-size: 768px 672px;
     background-position: 100% 70%;
@@ -160,37 +160,37 @@ h1 {
 }
 
 .card__analytics {
-    background-image: url("../../picture-assets/analytics.png");
+    background-image: url("../picture-assets/analytics.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .card__authentication {
-    background-image: url("../../picture-assets/auth.png");
+    background-image: url("../picture-assets/auth.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .card__database {
-    background-image: url("../../picture-assets/database.png");
+    background-image: url("../picture-assets/database.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .card__storage {
-    background-image: url("../../picture-assets/storage.png");
+    background-image: url("../picture-assets/storage.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .card__hosting {
-    background-image: url("../../picture-assets/hosting.png");
+    background-image: url("../picture-assets/hosting.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .card__cloud-functions {
-    background-image: url("../../picture-assets/functions.png");
+    background-image: url("../picture-assets/functions.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }   /* ---------------------------------- END OF block-offers */
